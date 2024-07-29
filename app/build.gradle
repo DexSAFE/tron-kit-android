@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'io.horizontalsystems.tronkit'
+    namespace 'io.dexnet.tronkit'
     compileSdk 33
 
     defaultConfig {
-        applicationId "io.horizontalsystems.tronkit"
+        applicationId "io.dexnet.tronkit"
         minSdk 27
         targetSdk 33
         versionCode 1

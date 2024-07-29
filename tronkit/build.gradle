@@ -37,7 +37,7 @@ protobuf {
 }
 
 android {
-    namespace 'io.horizontalsystems.tronkit'
+    namespace 'io.dexnet.tronkit'
     compileSdk 33
 
     defaultConfig {

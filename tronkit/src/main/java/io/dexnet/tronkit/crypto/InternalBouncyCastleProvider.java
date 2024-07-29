@@ -15,8 +15,8 @@ public final class InternalBouncyCastleProvider {
 
             INSTANCE = (p != null) ? p : new BouncyCastleProvider();
 
-            INSTANCE.put("MessageDigest.ETH-KECCAK-256", "io.horizontalsystems.tronkit.crypto.digest.Keccak256");
-            INSTANCE.put("MessageDigest.ETH-KECCAK-512", "io.horizontalsystems.tronkit.crypto.digest.Keccak512");
+            INSTANCE.put("MessageDigest.ETH-KECCAK-256", "io.dexnet.tronkit.crypto.digest.Keccak256");
+            INSTANCE.put("MessageDigest.ETH-KECCAK-512", "io.dexnet.tronkit.crypto.digest.Keccak512");
         }
     }
 

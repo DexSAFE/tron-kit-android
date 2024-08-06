@@ -1,7 +1,7 @@
 package io.dexnet.tronkit.transaction
 
-import io.horizontalsystems.hdwalletkit.ECKey
-import io.horizontalsystems.hdwalletkit.HDWallet
+import io.dexnet.hdwalletkit.ECKey
+import io.dexnet.hdwalletkit.HDWallet
 import io.dexnet.tronkit.crypto.Utils
 import io.dexnet.tronkit.hexStringToByteArray
 import io.dexnet.tronkit.models.Address
@@ -14,7 +14,7 @@ class Signer(
 ) {
 
     fun sign(createdTransaction: CreatedTransaction): ByteArray {
-        val rawTransactionHash = io.horizontalsystems.hdwalletkit.Utils.sha256(createdTransaction.raw_data_hex.hexStringToByteArray())
+        val rawTransactionHash = io.dexnet.hdwalletkit.Utils.sha256(createdTransaction.raw_data_hex.hexStringToByteArray())
 
         return Utils.ellipticSign(rawTransactionHash, privateKey)
     }

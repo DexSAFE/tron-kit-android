@@ -1,7 +1,7 @@
 package io.dexnet.tronkit.account
 
-import io.horizontalsystems.hdwalletkit.Base58
-import io.horizontalsystems.hdwalletkit.Utils
+import io.dexnet.hdwalletkit.Base58
+import io.dexnet.hdwalletkit.Utils
 import io.dexnet.tronkit.network.Network
 
 
